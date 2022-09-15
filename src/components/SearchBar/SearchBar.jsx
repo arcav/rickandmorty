@@ -1,8 +1,12 @@
-import "./SearchBar.modules.css"
+import "./SearchBar.modules.css";
 
 export const SearchBar = () => {
   return (
-    <input type="text" placeholder="search" className="search-bar"/>
-      
+    <div className="search-bar">
+      <input
+        type="text"
+        placeholder="Buscar Personaje..."
+      />
+    </div>
   );
 };

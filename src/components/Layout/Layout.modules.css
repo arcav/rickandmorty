@@ -1,7 +1,6 @@
-.container{
+.container {
     display: flex;
     flex-direction: column;
-    width: 90vw;
-    
-    
+    width: 100vw;
+    margin: 6rem auto 4rem 0rem;
 }

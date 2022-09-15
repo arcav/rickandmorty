@@ -1,8 +1,18 @@
 .hero {
-width: 100vw;
-display: flex;
+    width: 100vw;
+    display: flex;
 }
 
 .hero-img {
-    width: max-content;
+    width: 100vw;
+}
+
+@media (min-width:767px) {
+    .hero-img {
+        height: 40vh;
+        background-image: url(../../assets/cover.png)
+        
+    }
+
+    ;
 }

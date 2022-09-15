@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import ToggleButton from "../Button/ToggleButton/ToggleButton";
 import { SearchBar } from "../SearchBar/SearchBar";
 import "./NavBar.modules.css";
 
@@ -19,20 +20,16 @@ const routes = navLinks.map((route, i) => (
 
 export const Navbar = () => {
   return (
-    <>
-      <nav className="navbar">
+    <nav className="navbar">
+      <div className="navbar-container">
         <SearchBar />
-        <div className="toggle-btn">
-          <span className="bar" />
-          <span className="bar" />
-          <span className="bar" />
+        <ToggleButton />
         </div>
-        <div>
+        <div className="navlink-container">
           <ul>
             <li>{routes}</li>
           </ul>
-        </div>
-      </nav>
-    </>
+      </div>
+    </nav>
   );
 };

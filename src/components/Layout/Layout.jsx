@@ -2,7 +2,7 @@ import React from "react";
 import { Footer } from "../Footer/Footer";
 import { Navbar } from "../NavBar/NavBar";
 import { Hero } from "../Hero";
-import "./Layout.modules.css"
+import "./Layout.modules.css";
 
 const Layout = ({ children }) => {
   return (
@@ -15,4 +15,4 @@ const Layout = ({ children }) => {
   );
 };
 
-export default Layout
+export default Layout;

@@ -1,6 +1,36 @@
 .search-bar {
+    display: none;
     height: 35px;
-    width: 50vw;
+    width: 70vw;
     border-radius: 5px;
+    padding: 2px;
 }
 
+.search-container {
+    display: flex;
+}
+
+::placeholder {
+    padding: 1px;
+}
+
+
+
+@media (max-width:767px) {
+    .search-bar {
+        display: flex;
+        height: 30px;
+        width: 70vw;
+        border-radius: 5px;
+        padding: 2px;
+    }
+
+    ::placeholder {
+        padding: 2px;
+    }
+
+    input {
+        width: 70vw;
+    }
+
+}
