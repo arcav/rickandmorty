@@ -1,0 +1,9 @@
+.Hero {
+width: 100vw;
+display: flex;
+}
+
+img {
+    height: 400px;
+    width: 100vw;
+}

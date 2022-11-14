@@ -1,0 +1,26 @@
+.Home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-image:url(../../assets/Fondo\ imagen.png); 
+    overflow: hidden;
+}
+
+.btn {
+    width: 8rem;
+    height: 2.2rem;
+    border-radius: 50px;
+    border: none;
+    background-color: teal;
+    color:white;
+    font-size: medium;
+    font-weight: bolder;
+    padding: 2px;
+    cursor:pointer
+    
+
+}
