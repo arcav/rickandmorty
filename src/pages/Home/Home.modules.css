@@ -6,7 +6,9 @@
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
-    background-image:url(../../assets/Fondo\ imagen.png); 
+    width: 100vw;
+    height: 100vh;
+    background-image:url(../../assets/cover.png); 
     overflow: hidden;
 }
 

@@ -1,15 +1,76 @@
-.NavBar {
+.navbar {
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    height: 10vh;
+    flex-direction: row;
     width: 100vw;
-    height: 4rem;
-    background-color:black;
+    background-color: black;
+    color: white;
+
 }
 
-.Links {
-    color: aliceblue;
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li a {
     text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links {
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: 18px;
+    text-decoration: none;
+    justify-items: center;
+    align-content: center;
+    padding: 1.2em;
+}
+
+.navbar-links :hover {
+    color: red;
+    border-bottom: solid 4.7px red;
+    transition: ease-in-out 230ms;
+}
+
+.toggle-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+
+
+.bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+@media (max-width:700px) {
+
+    .navbar {
+        justify-content: space-evenly;
+        height: 8vh;
+
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+    .toggle-btn {
+        margin-right: 2rem;
+    }
 
 }

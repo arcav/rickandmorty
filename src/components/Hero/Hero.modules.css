@@ -1,9 +1,8 @@
-.Hero {
+.hero {
 width: 100vw;
 display: flex;
 }
 
-img {
-    height: 400px;
-    width: 100vw;
+.hero-img {
+    width: max-content;
 }

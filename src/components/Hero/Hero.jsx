@@ -1,10 +1,10 @@
-import BackGround from "../../assets/Fondo imagen-1.png";
+import BackGround from "../../assets/movilHero.png";
 
 import "./Hero.modules.css";
 
 export const Hero = () => {
   return (
-    <div className="Hero">
+    <div className="hero">
       <img src={BackGround} />
     </div>
   );
