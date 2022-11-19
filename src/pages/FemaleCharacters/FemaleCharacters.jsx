@@ -1,7 +1,3 @@
-import { Layout } from "../../components/Layout"
-
 export const FemaleCharacters = () => {
-  return (
-    <Layout>FemaleCharacters</Layout>
-  )
-}
+  return <h1>Female character</h1>;
+};

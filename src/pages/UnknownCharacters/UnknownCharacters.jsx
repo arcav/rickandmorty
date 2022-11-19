@@ -1,5 +1,3 @@
-import { Layout } from "../../components/Layout";
-
 export const UnknownCharacters = () => {
-  return <Layout>Unknowncharacters</Layout>;
+  return <h1>Unknowncharacters ;</h1>;
 };

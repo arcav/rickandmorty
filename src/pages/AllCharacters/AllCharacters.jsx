@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Layout from "../../components/Layout/Layout";
 import { Card } from "../../components/Card/Card";
-import { getData } from "../../utils/getData";
 
 const URI = "https://rickandmortyapi.com/api/character";
 

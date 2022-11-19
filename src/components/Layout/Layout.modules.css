@@ -1,6 +1,26 @@
 .container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 90vw;
+    align-items: center;
+    margin: auto;
     width: 100vw;
-    margin: 6rem auto 4rem 0rem;
+}
+
+@media (min-width:767px) {
+    .container {
+        grid-template-columns: repeat(2, 45vw);
+        justify-content: center;
+        width: 95vw;
+    }
+
+}
+
+@media (min-width:1023px) {
+    .container {
+        grid-template-columns: repeat(3, 30vw);
+        width: 95vw;
+        justify-content: space-evenly;
+        overflow: hidden;
+    }
+
 }

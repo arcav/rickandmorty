@@ -1,8 +1,7 @@
 .search-bar {
-    display: none;
-    height: 35px;
-    width: 70vw;
-    border-radius: 5px;
+    display: flex;
+    height: 36px;
+    width: 75vw;
     padding: 2px;
 }
 
@@ -11,18 +10,30 @@
 }
 
 ::placeholder {
-    padding: 1px;
+    padding: 5px;
+    font-size: 12px;
 }
 
+input {
+    width: 60vw;
+    border-color: azure;
+    background-color: #081F32;
+    border-radius: 25px;
+    color: aliceblue;
+    padding-left: 2em;
+    font-weight: bold;
+    font-size: 16px;
+}
 
-
-@media (max-width:767px) {
+@media (min-width:767px) {
     .search-bar {
         display: flex;
+        position: absolute;
         height: 30px;
-        width: 70vw;
+        width: 40vw;
         border-radius: 5px;
         padding: 2px;
+        margin-bottom: 16rem;
     }
 
     ::placeholder {
@@ -32,5 +43,4 @@
     input {
         width: 70vw;
     }
-
 }

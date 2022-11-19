@@ -1,18 +1,30 @@
 .hero {
     width: 100vw;
     display: flex;
+    flex-direction: column;
+
 }
 
 .hero-img {
     width: 100vw;
+    height: 35vh;
+    background-size: auto;
+
+}
+
+.search-bar-hero {
+    display: none;
 }
 
 @media (min-width:767px) {
-    .hero-img {
-        height: 40vh;
-        background-image: url(../../assets/cover.png)
-        
-    }
+    .search-bar-hero {
+        display: flex;
+        position: absolute;
+        background-color: red;
+        height: 30px;
+        width: 70vw;
+        border-radius: 5px;
+        padding: 2px;
 
-    ;
+    }
 }

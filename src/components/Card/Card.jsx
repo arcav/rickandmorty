@@ -9,11 +9,11 @@ export const Card = ({ character }) => {
       <div className="card">
         <div className="card-content">
           <h5>Alive-Human</h5>
-          <p>{name}</p>
+          <h5>{name}</h5>
           <h5>Last Known location</h5>
-          <p>{location.name}</p>
+          <h5>{location.name}</h5>
           <h5>First en in:</h5>          
-          <p>{origin.name} </p>
+          <h5>{origin.name} </h5>
         </div>
       </div>
     </div>

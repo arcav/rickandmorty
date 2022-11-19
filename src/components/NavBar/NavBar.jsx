@@ -24,11 +24,7 @@ export const Navbar = () => {
       <div className="navbar-container">
         <SearchBar />
         <ToggleButton />
-        </div>
-        <div className="navlink-container">
-          <ul>
-            <li>{routes}</li>
-          </ul>
+        <div className="navlink-container">{routes}</div>
       </div>
     </nav>
   );

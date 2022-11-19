@@ -2,6 +2,7 @@ import React from "react";
 import { Footer } from "../Footer/Footer";
 import { Navbar } from "../NavBar/NavBar";
 import { Hero } from "../Hero";
+import FavoriteButton from "../Button/FavoriteButton/FavoriteButton";
 import "./Layout.modules.css";
 
 const Layout = ({ children }) => {
@@ -9,7 +10,10 @@ const Layout = ({ children }) => {
     <>
       <Hero />
       <Navbar />
-      <main className="container">{children}</main>
+      <FavoriteButton />
+      <main className="container">
+        {children}
+      </main>
       <Footer />
     </>
   );
