@@ -4,7 +4,7 @@ import Logo1 from "../../assets/Rick-And-Morty-Logo1.png";
 
 import "./Home.modules.css";
 
-const Home = () => {
+export const Home = () => {
   return (
     <div className="Home">
       <div className="container">
@@ -17,7 +17,7 @@ const Home = () => {
           En esta prueba , evaluaremos su capacidad para construir la aplicacion
           mediante el analisis de codigo y la reproduccion del siguiente diseño
         </p>
-        <Link to="/allCharacters">
+        <Link to="/characters/all">
           <button className="btn">Continuar</button>
         </Link>
       </div>
@@ -25,4 +25,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+

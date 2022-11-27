@@ -4,19 +4,20 @@ import { Navbar } from "../NavBar/NavBar";
 import { Hero } from "../Hero";
 import FavoriteButton from "../Button/FavoriteButton/FavoriteButton";
 import "./Layout.modules.css";
+import { Outlet } from "react-router-dom";
 
-const Layout = ({ children }) => {
+export const Layout = () => {
   return (
-    <>
+    <div>
       <Hero />
       <Navbar />
-      <FavoriteButton />
-      <main className="container">
-        {children}
+      <FavoriteButton /> 
+      <main>
+        <section className="container">
+           <Outlet /> 
+        </section>
       </main>
       <Footer />
-    </>
+    </div>
   );
 };
-
-export default Layout;

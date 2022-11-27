@@ -1,9 +1,13 @@
+
+
 .container {
     display: grid;
     grid-template-columns: 90vw;
-    align-items: center;
+    align-items: flex-start;
     margin: auto;
     width: 100vw;
+    height:39vh ;
+    
 }
 
 @media (min-width:767px) {

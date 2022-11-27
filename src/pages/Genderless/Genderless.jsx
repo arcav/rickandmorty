@@ -1,5 +1,3 @@
-import { Layout } from "../../components/Layout";
-
-export const Genderless = () => {
+export const GenderlessCharacters = () => {
   return <h1>Genderless</h1>;
 };
