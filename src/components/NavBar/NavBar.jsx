@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { NavLink, useParams } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import ToggleButton from "../Button/ToggleButton/ToggleButton";
 import { SearchBar } from "../SearchBar/SearchBar";
-import "./NavBar.modules.css";
+import "./navBar.modules.css";
 
 const navLinks = [
   { route: "All", path: "all" },
@@ -12,7 +12,7 @@ const navLinks = [
   { route: "Genderless", path: "unknown" },
 ];
 
-export const Navbar = () => {
+export const Navbar = ({onSubmit}) => {
   const [sidebar, setSidebar] = useState(false);
 
   const handleClick = () => {
@@ -30,11 +30,12 @@ export const Navbar = () => {
     </NavLink>
   ));
 
+  
   return (
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <SearchBar />
+          <SearchBar onSubmit={onSubmit} />
           <ToggleButton click={handleClick} />
           <div className="navlink-container">{routes}</div>
         </div>

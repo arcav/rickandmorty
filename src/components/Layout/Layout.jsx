@@ -6,15 +6,17 @@ import FavoriteButton from "../Button/FavoriteButton/FavoriteButton";
 import "./Layout.modules.css";
 import { Outlet } from "react-router-dom";
 
-export const Layout = () => {
+
+
+export const Layout = ({onSubmit}) => {
   return (
-    <div>
+    <div className="layout">
       <Hero />
-      <Navbar />
-      <FavoriteButton /> 
+      <Navbar onSubmit={onSubmit} />
+      <FavoriteButton />
       <main>
         <section className="container">
-           <Outlet /> 
+          <Outlet />
         </section>
       </main>
       <Footer />

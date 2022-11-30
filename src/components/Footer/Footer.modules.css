@@ -1,12 +1,11 @@
-.Footer{
+.Footer {
     height: 100px;
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
-    background-image:url(../../assets/Size=Movil.png); 
+    background-image: url(../../assets/Size=Movil.png);
+    bottom: 0;
     position: relative;
+    width: 100%;
+
 }
-
-
-    
-    

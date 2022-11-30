@@ -1,11 +1,11 @@
 import React from "react";
 import { Card } from "../../components/Card/Card";
 
-export const FemaleCharacters = ({ characters }) => {
- 
+export const SearchCaracters = ({ filterCharacter }) => {
+
   return (
     <>
-      {characters.map((character, i) => (
+      {filterCharacter.map((character, i) => (
         <Card character={character} key={i} />
       ))}
     </>

@@ -1,12 +1,16 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: content-box;
-  overflow-x: hidden;
-  height: max-content;
+
 }
 
-ul{
+html,
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+ul {
   list-style: none;
 }
-
