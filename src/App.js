@@ -16,6 +16,7 @@ function App() {
     const queryCharacter = characters.filter((f) =>
       f.name.toLowerCase().includes(searchQuery)
     );
+    return queryCharacter;
   };
 
   console.log(filterCharacter);
